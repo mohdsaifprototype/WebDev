@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings and string methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div class="content">
+            <div id="content1"></div>
+            <div id="content2"></div>
+            <p>This is a paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor libero dicta
+                optio reiciendis est veritatis amet, sequi aspernatur dolorem vitae nisi laudantium nesciunt id ab
+                quidem commodi maiores ut autem laboriosam. Saepe, placeat.</p>
+        </div>
+    </div>
+    <script>
+        // var string = "this";
+        var string = 'this';
+        var name = "Mohd Saif";
+        var channel = "Mohd Saif Prototype";
+        var message = " He is a persistance person!"
+        var temp = `${name} is a 'persistance' person and he has a YouTube channel "${channel}"`;
+
+        console.log(string + name + message);
+        console.log(temp);
+        var len = name.length;
+        console.log(`The character length of name '${name}' is: ${len}`);
+
+        console.log("Hello world \nHello Mohd Saif\t\tHello\bthere");
+
+        var y = new String("This");
+        console.log(y);
+        console.log(len);
+
+        document.getElementById('content1').innerHTML = '<h2>This is an h2 heading using JS</h2>'
+        document.getElementById('content2').innerHTML = '<h2>' + temp + '</h2>'
+    </script>
+</body>
+
+</html>

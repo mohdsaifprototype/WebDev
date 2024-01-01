@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        simple si html
+    </div>
+
+    <script>
+        let myVar1 = 786;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        /*------------- Object part -------------------*/
+        let mySelf = {
+            name: "Mohd Saif", salary: 5000, hobby: "playing video games and watching webseries", 'skill set': "Programming, coding, problem solving, English communincation and many more!"
+        };
+        console.log(mySelf);
+        console.log(mySelf.name);
+        console.log(mySelf['name']);
+        // console.log(mySelf.'skill set'); // it will not work
+        console.log(mySelf['skill set']);
+
+        // /*-------------- Array part -------------------*/
+        // // let arr = [1, 2, 1.1, 'H', "hello", 7];
+        // // or we can assign the same thing with using new 
+        // let arr = new Array(1, 2, 1.1, 'H', "hello", 7);
+        // // It will print the total no. of elements in the array
+        // console.log(arr.length);
+        // console.log(arr);
+        // arr = arr.sort();
+        // console.log(arr);
+        // arr.push("let's push an element in the arr")
+        // console.log(arr);
+
+        // There is a way to create an array with n undefined element simply by writing the command given below
+        arr1 = new Array(10);   // It will create 10 undefiend elements of arr1
+    </script>
+</body>
+
+</html>

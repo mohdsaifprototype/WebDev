@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interation using alert, confirm, and prompt</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        simple si html
+    </div>
+
+    <script>
+        // Alert in in-browser JS - it doesn't return anything
+        // It is promoted in the modal window
+        // alert("This is an alert message!");
+
+        //prompt accepts two arguments first is string message and a default value to be stored if no value is passed 
+        // let name = prompt("Please enter your name", "Guest");
+        // console.log(`Your name is ${name}`);
+
+        let deletePost = confirm("Do you really want to delete the post?");
+        if (deletePost) {
+            console.log("Your post has been successfully deleted!");
+        }
+        else {
+            console.log("Post deletion has been canceled!");
+        }
+    </script>
+</body>
+
+</html>

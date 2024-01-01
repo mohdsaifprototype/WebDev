@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM | Navigating the DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li id="li1">Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is another container
+    </div>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        p{margin: 10px;color: antiquewhite;}
+        .c{overflow: hidden;}
+        #m{justify-self: start;}
+    </style>
+    <script>
+        let main = document.getElementById("main");
+        console.log(main);
+        let nav = document.getElementById("nav");
+        console.log(nav);
+        
+        let li1 = document.getElementById("li1");
+        console.log(li1);
+        console.log(li1.innerHTML = "Hello there");
+        
+        let container = document.getElementsByClassName("container");
+        console.log(container);
+
+        console.log(container[0]);  // It will print the first element having the class name container
+        console.log(container[1]);  // It will print the second element having the class name container
+
+        // let sel = document.querySelector(".container");
+        // console.log("Selector returns", sel);
+
+        let sel = document.querySelectorAll("#nav>li");
+        console.log("Selector returns", sel);
+    </script>
+</body>
+
+</html>

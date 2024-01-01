@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div class="content">
+            <p>This is a paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor libero dicta
+                optio reiciendis est veritatis amet, sequi aspernatur dolorem vitae nisi laudantium nesciunt id ab
+                quidem commodi maiores ut autem laboriosam. Saepe, placeat.</p>
+        </div>
+    </div>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // indexOf() will return the index of first matching occurance of string
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // lastIndexOf() will return the index of first matching occurance of string
+        position = str.lastIndexOf('is');
+        console.log(position);
+        
+        // Substring from a string
+        // var substr = str.slice(-14,6);     // Can accept negative indexing
+        // var substr = str.substring(2,6);     // Accept only positive indexing
+        // console.log(substr);
+        var substr1 = str.substr(2,7);       // This sets the initial indexing and then starts till the given indexing
+        console.log(substr1);
+
+        // var replaced = str.replace('string', 'Saif');   // It will replace 'string' with 'Saif'
+        // console.log(str);
+        // console.log(replaced);
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        // var newString = str.concat("This is newly added string in str");
+        // console.log(newString)
+        // var strWithWhitespaces = "       this       contains   whitespaces       ";
+        // console.log(strWithWhitespaces);
+        // console.log(strWithWhitespaces.trim());
+
+        var char2 = str.charAt(2);
+        // var char2 = str.charCodeAt(2);
+        console.log(char2);
+
+        console.log(str[2]);
+        </script>
+</body>
+
+</html>
