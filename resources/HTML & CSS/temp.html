@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+
+        }
+
+        .item {
+            background-color: yellow;
+            border: .15rem solid black;
+            border-radius: .2rem;
+            padding: 0 .5rem;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        nav ul {
+            padding-left: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            display: block;
+            width: max-content;
+            text-decoration: none;
+            color: brown;
+            background-color: cadetblue;
+            padding: .5rem;
+            margin: .2rem;
+            border: .15rem solid brown;
+            border-radius: .5rem;
+        }
+    </style>
+    <style>
+        @media (min-width: 2560px){
+            body{
+                background-color: rgba(83, 80, 80, 0.258);
+            }
+        }
+        @media (min-width: 1440px) and (max-width:2559px){
+            body{
+                background-color: rgba(255, 229, 33, 0.703);
+            }
+        }
+        @media (min-width: 1024px) and (max-width:1439px){
+            body{
+                background-color: rgba(126, 248, 39, 0.784);
+            }
+        }
+        @media (min-width: 768px) and (max-width:1023px){
+            body{
+                background-color: rgba(58, 242, 220, 0.793);
+            }
+        }
+        @media (max-width:767px){
+            body{
+                background-color: rgb(130, 72, 247);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar" class="item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+        <section id="section" class="item">
+            <h2>Section heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero natus nulla deserunt velit sed
+                consectetur impedit adipisci voluptatibus inventore repellat nobis iste, optio fugiat ipsum nisi,
+                doloremque eaque, laudantium asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veniam vitae. Accusantium facilis odio in
+                ullam magni sunt assumenda quidem deleniti officiis eum. Sit quo in inventore distinctio officiis
+                mollitia.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit molestiae provident, dignissimos eligendi
+                reiciendis ipsum distinctio, id quidem veritatis recusandae, quam placeat eaque nesciunt corporis.
+                Corrupti fugiat doloremque incidunt. Libero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minima! Quos, voluptate voluptatibus.
+                Recusandae illo accusantium necessitatibus placeat, corporis aspernatur!</p>
+        </section>
+        <aside id="aside" class="item">
+            <h2>Aside Bar</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Next</a></li>
+                <li><a href="#">Previous</a></li>
+            </ul>
+            <hr>
+            <h3>An H3 heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet ipsum corporis molestiae provident dolore expedita commodi. Laboriosam deserunt nihil nobis reprehenderit, saepe debitis fugit, corrupti delectus iusto eum praesentium, molestias laudantium.</p>
+        </aside>
+        <footer class="item">&copy; All Rights Reserved</footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            /* border: 2px solid red; */
+
+            /* (box-shadow: offset-x offset-y color) */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+
+            /* (box-shadow: offset-x offset-y blur-radius color) */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green; */
+
+            /* (box-shadow: offset-x offset-y blur-radius spread-radius color) */
+            /* box-shadow: -7px -5px 10px 34px green; */
+            /* box-shadow: 7px 5px 10px 34px rgba(116, 229, 116, 0.507); */
+
+            /* Use comma sign to add multiple shadows */
+            /* box-shadow: 7px 5px green, -11px -9px red; */
+            box-shadow: 7px 5px 3px green, 11px 9px 3px red;
+            
+            /* (box-shadow: inset offset-x offset-y blur-radius spread-radius color) */
+            /* box-shadow: inset 10px 10px green; */
+        }
+        .card h2{
+            /* (text-shadow: offset-x offset-y blur-radius color) */
+            text-shadow: 2px 1px 4px rebeccapurple;
+            /* text-shadow: 2px 1px 4px rebeccapurple, 3px 2px 5px red; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>I have a started C++ course which does not mean that we will stop this course. we will continue this course to completion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore, iure ipsa sequi ab nihil aspernatur excepturi cupiditate quisquam dolorem, eligendi voluptas. Consequatur saepe numquam animi iste nam maxime at tenetur voluptates perspiciatis dolorem!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore, iure ipsa sequi ab nihil aspernatur excepturi cupiditate quisquam dolorem, eligendi voluptas. Consequatur saepe numquam animi iste nam maxime at tenetur voluptates perspiciatis dolorem!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore, iure ipsa sequi ab nihil aspernatur excepturi cupiditate quisquam dolorem, eligendi voluptas. Consequatur saepe numquam animi iste nam maxime at tenetur voluptates perspiciatis dolorem!</p>
+        </div>
+    </div>
+</body>
+
+</html>

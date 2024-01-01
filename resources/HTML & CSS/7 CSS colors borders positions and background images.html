@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS colors and borders</title>
+    <style>
+        /* *{
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+        div{
+            width: 50%;
+        } */
+        #firstPara{
+            color: red;
+            background-color: yellow;
+            height: 100px;
+            width: 200px;
+            border-width: 5px;
+            border-color: blue;
+            border-style: solid;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #secondPara{
+            color: red;
+            background-color: yellow;
+            height: 100px;
+            width: 200px;
+            border: 5px solid blue;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #thirdPara{
+            color: red;
+            background-color: yellow;
+            height: 100px;
+            width: 200px;
+            border-style: solid;
+            border-width: 5px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-left-color: blue;
+            border-right-color: orangered;
+            border-top-color: pink;
+            border-bottom-color: gray;
+            padding: 10px;
+        }
+        #fourthPara{
+            color: red;
+            background-color: yellow;
+            height: 100px;
+            width: 200px;
+            border-left: 5px solid gray;
+            border-right: 5px solid purple;
+            border-top: 5px solid orchid;
+            border-bottom: 5px solid blue;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 40px;
+            padding: 10px;
+        }
+        #firstBlock{
+            border: 5px solid green;
+            height: 500px;
+            width: auto;
+            
+            background-image: url('https://picsum.photos/200');
+
+            background-repeat: no-repeat;
+
+            background-position: center right;
+            /* background-position can use the following properties:
+                center, top, bottom, left, right
+                Note: The properties should be used in pairs
+                by default if single propery is used then the other one will be
+                considered as center  */
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>This is first heading</h2>
+    <p id="firstPara">This is a paragraph</p>
+
+    <h2>This is second heading</h2>
+    <p id="secondPara">This is second paragraph</p>
+
+    <h2>This is third heading</h2>
+    <p id="thirdPara">This is third paragraph</p>
+
+    <h2>This is fourth heading</h2>
+    <p id="fourthPara">This is fourth paragraph</p>
+
+    <h2>This is fifth heading</h2>
+    <div id="firstBlock">
+
+    </div>
+</body>
+</html>

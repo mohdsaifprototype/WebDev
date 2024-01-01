@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+        .container{
+            border: 5px solid red;
+            background-color: antiquewhite;
+            height: 3000px;
+        }
+        /* position property can have the following values */
+        /* static(by default), relative, absolute, fixed and sticky */
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+            background-color: rgba(0, 255, 255, 0.555);
+        }
+
+        #box4 {
+            box-sizing: border-box;
+            border: 4px solid violet;
+            /* fixed: positions the element relative to the browser window */
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+        }
+
+        #box3 {
+            border: 3px solid indigo;
+            /* relative: positions the element relative to its normal position and will leave a gap at its normal position*/
+            position: relative;
+            top: 3px;
+            right: 3px;
+        }
+
+        #box2 {
+            border: 2px solid blue;
+            /* absolute: positions the element relative to its normal position */
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: center;
+        }
+
+        #box1 {
+            border: 1px solid green;
+            /* sticky: positions the element relative to its normal position */
+            position: sticky;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1 with sticky property
+            <h2>Can be used for menu</h2>
+        </div>
+        <div class="box" id="box2">2 with absolute property
+            <h1>logo</h1>
+        </div>
+        <div class="box" id="box3">3 With relative property!</div>
+        <div class="box" id="box4">4 with fixed property
+            <h5>chat with us!</h5>
+        </div>
+    </div>
+</body>
+
+</html>
