@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+    <style>
+        .container{
+            font-size: 25px;
+            background-color: lemonchiffon;
+            border: 2px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        Current time is: <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let timeNow = new Date();
+        console.log(timeNow);
+
+        // let dt = new Date(1700000000000);
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-10-31");
+        // console.log(newDate);
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        // Note: index month starts from 0!
+        // So, for October or 10th month you have to use index value = 9;
+        let newDate = new Date(3020, 9, 31, 0, 1, 1, 100);
+        console.log(newDate);
+
+        let year = newDate.getFullYear();
+        console.log(`The year is ${year}`);
+        
+        let month = newDate.getMonth();
+        console.log(`The month is ${month}`);
+        
+        let date = newDate.getDate();
+        console.log(`The date is ${date}`);
+        
+        let day = newDate.getDay();
+        console.log(`The day is ${day}`);
+        
+        let hours = newDate.getHours();
+        console.log(`The hours are ${hours}`);
+
+        let minutes = newDate.getMinutes();
+        console.log(`The minutes are ${minutes}`);
+
+        let seconds = newDate.getSeconds();
+        console.log(`The seconds are ${seconds}`);
+
+        let milliseconds = newDate.getMilliseconds();
+        console.log(`The milliseconds are ${milliseconds}`);
+        
+        let now = Date.now();
+        console.log(`The total milliseconds passed are: ${now}`);
+
+        newDate.setFullYear(3000);
+        newDate.setMonth(1);
+        newDate.setDate(7);
+        newDate.setHours(8);
+        newDate.setMinutes(12);
+        newDate.setSeconds(15);
+        newDate.setMilliseconds(120);
+
+        console.log(newDate);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime(){
+            // let presentTime = new Date();
+            // document.getElementById('time').innerHTML = presentTime;
+
+            // OR
+
+            document.getElementById('time').innerHTML = new Date();
+        }
+        </script>
+</body>
+
+</html>
