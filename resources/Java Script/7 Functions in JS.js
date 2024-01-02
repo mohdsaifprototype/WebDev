@@ -18,8 +18,8 @@ callMe(name1);
 callMe(name2, greetText);
 callMe(name3, greetText);
 
-function sum(a,b,c){
-    return a+b+c;
+function sum(a, b, c) {
+    return a + b + c;
 }
-let d = sum(3,2,1);
+let d = sum(3, 2, 1);
 console.log(`The sum of 3, 2, 1 is: ${d}`);
