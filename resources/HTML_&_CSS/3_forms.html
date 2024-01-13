@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML | 3 HTML</title>
+</head>
+
+<body>
+    <h2>HTML forms tutorial</h2>
+    <form action="#" method="POST">
+        <label for="Name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="Name" placeholder="Enter your name" required>
+        </div>
+    
+        <label for="Role">Role:</label>
+        <div>
+            <input type="text" name="myRole" id="Role" placeholder="Enter your role">
+        </div>
+    
+        <label for="Email">Email:</label>
+        <div>
+            <input type="email" name="myEmail" id="Email" placeholder="Enter your email" required>
+        </div>
+    
+        <label for="Salary">Salary:</label>
+        <div>
+            <input type="text" name="mySalary" id="Salary" placeholder="Enter your salary">
+        </div>
+    
+        <label for="Date">Date:</label>
+        <div>
+            <input type="date" name="myDate" id="Date" required>
+        </div>
+    
+        <label for="Bonus">Bonus:</label>
+        <div>
+            <input type="number" name="myNumber" id="Bonus" placeholder="Enter bonus">
+        </div>
+    
+        <div>
+            <label>
+                <input type="checkbox" name="myEligibility" checked>
+                Are you eligible?
+            </label>
+        </div>
+    
+        <fieldset>
+            <legend>Gender:</legend>
+            <label>
+                <input type="radio" name="myGender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="myGender" value="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="myGender" value="other"> Other
+            </label>
+        </fieldset>
+    
+        <div>
+            <div>
+                <label for="textArea">Write about yourself:</label>
+            </div>
+            <textarea name="textArea" id="textArea" cols="60" rows="10" placeholder="Write here" required></textarea>
+        </div>
+    
+        <label for="Program">My program:</label>
+        <div>
+            <select name="myProgram" id="Program">
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </div>
+    
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    
+    <!-- <form action="backend.py" method="post">
+        <label for="Name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="Name">
+        </div>
+        <div>
+            <label for="myRole">Role:
+                <input type="text" name="myRole" id="myRole"></label>
+        </div>
+        <div>
+            <label>
+                Email: <input type="email" name="myEmail">
+            </label>
+        </div>
+        <div>
+            <label>
+                Salary:<input type="text" name="mySalary">
+            </label>
+        </div>
+        <div>
+            <label>
+                date: <input type="date" name="myDate">
+            </label>
+        </div>
+        <div>
+            <label>
+                bonus: <input type="number" name="myNumber">
+            </label>
+        </div>
+        <div>
+            <label>
+                Are you eligible? <input type="checkbox" name="myEligiblity" checked>
+            </label>
+        </div>
+        <div>
+            Gender: 
+            <input type="radio" name="myGender" value="Male"> Male
+            <input type="radio" name="myGender" value="Female"> Female
+            <input type="radio" name="myGender" value="Other"> Other
+        </div>
+        <div>
+            <div>
+                Write about yourself:
+            </div>
+            <textarea name="textArea" cols="60" rows="10" placeholder="Write here"></textarea>
+        </div>
+        <div>
+            <label for="pg">My program</label>
+            <select name="myProgram" id="pg">
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form> -->
+</body>
+
+</html>
