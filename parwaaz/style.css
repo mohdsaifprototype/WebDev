@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Fonts that can be used from the above import statement */
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Merriweather', serif;
+font-family: 'PT Serif', serif; */
+
+:root {
+    --brand-color1: #2c4ee3;
+    --brand-color2: #ff4d00;
+    --brand-color3: purple;
+    --paradise: #EF476F;
+    --crayola: #FFD166;
+    --green: #06D6A0;
+    --powder: #FFEABA;
+    --brand-font: "coco-sharp", sans-serif;
+    --font1: 'PT Serif', serif;
+    --font2: 'Libre Baskerville', serif;
+    --font3: 'Merriweather', serif;
+    --size1: 6rem;
+    --size2: 5rem;
+    --size3: 4rem;
+    --size4: 3rem;
+    --size5: 2rem;
+    --size6: 1rem;
+    --s1: 6em;
+    --s2: 5em;
+    --s3: 4em;
+    --s4: 3em;
+    --s5: 2em;
+    --s6: 1em;
+}
+
+.coco-font {
+    font-family: var(--brand-font);
+}
+
+.primary-font {
+    font-family: var(--font1);
+}
+
+.seconday-font {
+    font-family: var(--font2);
+}
+
+/* **************Nav links*********************** */
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin: 0 3px;
+    /* background-color: #2cafe318; */
+    background-color: brown;
+
+}
+
+.nav-link:hover {
+    transition: 0.3s;
+    color: yellow;
+    background-color: #111da6;
+    /* font-size: 1.6rem; */
+}
+
+.nav-link:active {
+    transition: 0.1s;
+    color: orange;
+}
+
+.nav-link:visited {
+    color: rgb(189, 185, 185);
+}
+
+/* ************************************************** */
+
+.parwaaz {
+    font-family: var(--brand-font);
+    text-transform: uppercase;
+    color: #ff4d00;
+    text-shadow: 2px 3px 3px blue;
+}
+
+/* .in-shadow{
+    box-shadow: 0px 0px 127px 55px var(--brand-color2),  0px 1px 751px 151px var(--brand-color1);
+} */
+
+.fixed-links {
+    width: 3rem;
+    max-width: 4rem;
+    list-style: none;
+    /* border: 3px solid slateblue; */
+    border-radius: 3px;
+    position: fixed;
+    bottom: 30%;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.579);
+    z-index: 4;
+}
+
+.fixed-link {
+    margin: 4px 2px;
+    padding: 5px 2px;
+}
+
+.fixed-link:hover {
+    transition: 2s;
+    width: 3.25rem;
+}
+
+.footer {
+    background-color: var(--brand-color1);
+    color: white;
+    width: 100vw;
+    position: relative;
+    bottom: -1px;
+    left: 0;
+    padding: 10px 5px;
+}

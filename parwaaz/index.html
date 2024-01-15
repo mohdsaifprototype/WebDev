@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slider</title>
-  <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="responsive.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -107,35 +107,46 @@
       </button>
     </div>
   </header>
-  <ul>
-    <li>
+  <style>
+    .social-links {
+      border: 1px solid red;
+      width: max-content;
+      height: max-content;
+      background-color: rgba(137, 43, 226, 0.538);
+    }
+  </style>
+  <ul class="fixed-links">
+    <!-- <div class="social-links">
+  hello there
+    </div> -->
+    <li class="fixed-link">
       <a href="https://instagram.com/p_e_c_parwaaz?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
-        <img src="social-icons/instagram.svg" alt="instagram.svg">
+        <img src="social-icons/instagram.svg" alt="instagram.svg" width="100%">
       </a>
     </li>
-    <li>
+    <li class="fixed-link">
       <a href="https://www.facebook.com/PARWAAZ.EDUCATION.CENTER?mibextid=ZbWKwL">
-        <img src="social-icons/Facebook.svg" alt="facebook.svg">
+        <img src="social-icons/facebook.svg" alt="facebook.svg" width="100%">
       </a>
     </li>
-    <li>
+    <li class="fixed-link">
       <a href="https://youtube.com/@parwaazedu">
-        <img src="social-icons/YouTube.svg" alt="youtube.svg">
+        <img src="social-icons/youtube.svg" alt="youtube.svg" width="100%">
       </a>
     </li>
-    <li>
+    <li class="fixed-link">
       <a href="https://www.linkedin.com/company/pec-/">
-        <img src="social-icons/LinkedIn.svg" alt="linkein.svg">
+        <img src="social-icons/linkedin.svg" alt="linkein.svg" width="100%">
       </a>
     </li>
-    <li>
+    <li class="fixed-link">
       <a href="https://twitter.com/parwaaz_center?t=GT3lS0S6fgjUBDTy7GHDjg&s=08">
-        <img src="social-icons/Twitter-x.svg" alt="twitter.svg">
+        <img src="social-icons/twitter-x.svg" alt="twitter.svg" width="100%">
       </a>
     </li>
-    <li>
+    <li class="fixed-link">
       <a href="https://api.whatsapp.com/send/?phone=9101141608909&text&type=phone_number&app_absent=0">
-        <img src="social-icons/WhatsApp.svg" alt="whatsapp.svg">
+        <img src="social-icons/whatsapp.svg" alt="whatsapp.svg" width="100%">
       </a>
     </li>
   </ul>
@@ -150,81 +161,91 @@
         settle for the less!</p>
     </div>
   </section>
-  <section class="container">
-    <h2>Courses</h2>
-    <div class="row">
-      <div class="card col-4">
-        <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">11th and 12th Science, JEE NEET CUET</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+  <section class="container-fluid">
+    <div class="container">
+      <h2>Courses</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/id/100/300/200" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">11th and 12th Science, JEE NEET CUET</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">11th and 12th Arts, BA LLB CUET JMI, DU AMU</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card col-4">
-        <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">11th and 12th Arts, BA LLB CUET JMI, DU AMU</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">11th and 12th Commerce, CA, CS, CUET DU, JMI AMU</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card col-4">
-        <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">11th and 12th Commerce, CA, CS, CUET DU, JMI AMU</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      <div class="card col-4">
-        <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">6th to 10th 6th, 9th and 11th preparation</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/id/100/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">6th to 10th 6th, 9th and 11th preparation</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- <script src="scripts/footer.js"></script> -->
-  <footer class="container-fluid bg-info rounded-bottom">
+  <footer class="footer container-fluid bg-info rounded-bottom">
     <p class="text-center">Copyright! &copy;2024 | All rights reseved</p>
     <p class="text-center">made by <a href="https://www.pmsprototype.com">PMS Prototype</a></p>
   </footer>
