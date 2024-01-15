@@ -1,97 +1,97 @@
 /* * {
-    border: 2px solid red;
-    margin: 5px;
-    padding: 2px;
+  border: 2px solid red;
+  margin: 5px;
+  padding: 2px;
 } */
 
 /* Style for HTML Article tag:  */
 aside {
-    width: 40%;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
 }
 
 aside>p {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 p {
-    font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 /* Style for HTML Figcaption tag: */
 figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
-    margin: auto;
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
 }
 
 img {
-    max-width: 220px;
-    max-height: 150px;
+  max-width: 220px;
+  max-height: 150px;
 }
 
 figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
 
 /* Style for HTML Nav tag: */
 nav {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .crumb {
-    display: inline-block;
+  display: inline-block;
 }
 
 .crumb a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
+  display: inline-block;
+  color: #000;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
 }
 
 /* Style for HTML Summary tag: */
 details.detailTag {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
 }
 
 summary.summaryTag {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
 }
 
 details.detailTag[open] {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 details.detailTag[open] summary.summaryTag {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }
 
 /* Style for HTML Time tag: */
 time {
-    font-weight: bold;
+  font-weight: bold;
 }

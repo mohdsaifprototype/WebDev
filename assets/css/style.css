@@ -8,6 +8,7 @@
   border: 1px solid rgb(254, 244, 243);
   margin: 0;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
 /* Modified tags */
@@ -22,6 +23,7 @@ body {
   width: 80vw;
   margin: auto;
   padding: 10px 15px;
+  margin-bottom: 10px;
 }
 
 /* Modified ids */

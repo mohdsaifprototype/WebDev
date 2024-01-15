@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container classes | 1 Bootstap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+    * {
+      border: 1px solid rgba(58, 200, 212, 0.659);
+    }
+    body{
+      background: url(https://picsum.photos/1920/1080) no-repeat center center/cover fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <h1>Part 1:</h1>
+        <h2>Representation of column using infix like col-, col-sm-, col-md-, col-lg-, col-xl-, col-xxl-</h2>
+        <div class="col-lg-3 col-md-6 col-12">Column-1</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-2</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-3</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-4</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur dicta ratione
+          commodi animi maiores? Laborum consectetur provident laboriosam temporibus obcaecati possimus distinctio
+          dolorem sequi excepturi et quaerat ea culpa cupiditate, sapiente nulla quidem suscipit libero, quod iure,
+          aliquam veniam totam reiciendis. Nemo corporis maiores rerum aut obcaecati, quae inventore excepturi magnam
+          est explicabo eos laudantium iste architecto dolore, esse consequatur laboriosam dolor. Voluptates, facere
+          voluptatem, debitis dolore quam animi rerum placeat laudantium unde, dolores repellendus amet ipsum aliquid
+          alias aut nulla! Ad voluptatem alias sed quasi sunt, at aut, architecto aliquam consequatur unde, asperiores
+          rerum nihil ducimus molestiae provident?</div>
+        <div class="col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur dicta ratione
+          commodi animi maiores? Laborum consectetur provident laboriosam temporibus obcaecati possimus distinctio
+          dolorem sequi excepturi et quaerat ea culpa cupiditate, sapiente nulla quidem suscipit libero, quod iure,
+          aliquam veniam totam reiciendis. Nemo corporis maiores rerum aut obcaecati, quae inventore excepturi magnam
+          est explicabo eos laudantium iste architecto dolore, esse consequatur laboriosam dolor. Voluptates, facere
+          voluptatem, debitis dolore quam animi rerum placeat laudantium unde, dolores repellendus amet ipsum aliquid
+          alias aut nulla! Ad voluptatem alias sed quasi sunt, at aut, architecto aliquam consequatur unde, asperiores
+          rerum nihil ducimus molestiae provident?</div>
+      </div>
+      <div class="row">
+        <h1>Part 2:</h1>
+        <h2>Representation of column using classes like col, col-sm, col-md, col-lg, col-xl, col-xxl</h2>
+        <div class="col-lg col-md-6 col-6">Column-1</div>
+        <div class="col-lg col-md-6 col-6">Column-2</div>
+        <div class="col-lg col-md-6 col-6">Column-3</div>
+        <div class="col-lg col-md-6 col-6">Column-4</div>
+        <div class="col-lg col-md-6 col-6">Column-5</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1>Part 3:</h1>
+        <h2>Representation of row column classes in Bootstap</h2>
+      </div>
+      <div class="row row-cols-4">
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col-6">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="border bg-light">Row column</div>
+        </div>
+        <div class="col-6">
+          <div class="border bg-light">Row column</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1>Part 4:</h1>
+        <h2>Gutter classes in Bootstap using gx- and gy- for x and y axis responsive</h2>
+        <h3>Note: gx- is used for padding while gy- is used for margin top.</h3>
+        <div class="col-lg-3 col-md-6 col-12">Column-1</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-2</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-3</div>
+        <div class="col-lg-3 col-md-6 col-12">Column-4</div>
+      </div>
+      <div class="row gx-0 gy-lg-3 gy-sm-1 gy-2">
+        <div class="col-lg-6" style="background: yellow;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Quisquam culpa ad animi veritatis eligendi deleniti. Omnis optio voluptatem ratione reiciendis beatae, quia
+          consequuntur fuga. Molestias eligendi facere qui ab temporibus impedit debitis nisi sed beatae, soluta
+          similique veritatis, unde tenetur dignissimos? Magni illum sit eaque, voluptatibus delectus sed esse quam
+          beatae aliquam. Fuga, repudiandae ipsam! Dignissimos voluptatem dolore non, in iusto sed. Blanditiis
+          necessitatibus repellendus libero! Quidem soluta quibusdam ab fugit reiciendis saepe deserunt consequuntur?
+        </div>
+        <div class="col-lg-6" style="background: green;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Quisquam culpa ad animi veritatis eligendi deleniti. Omnis optio voluptatem ratione reiciendis beatae, quia
+          consequuntur fuga. Molestias eligendi facere qui ab temporibus impedit debitis nisi sed beatae, soluta
+          similique veritatis, unde tenetur dignissimos? Magni illum sit eaque, voluptatibus delectus sed esse quam
+          beatae aliquam. Fuga, repudiandae ipsam! Dignissimos voluptatem dolore non, in iusto sed. Blanditiis
+          necessitatibus repellendus libero! Quidem soluta quibusdam ab fugit reiciendis saepe deserunt consequuntur?
+        </div>
+        <div class="col-lg-6" style="background: skyblue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Quisquam culpa ad animi veritatis eligendi deleniti. Omnis optio voluptatem ratione reiciendis beatae, quia
+          consequuntur fuga. Molestias eligendi facere qui ab temporibus impedit debitis nisi sed beatae, soluta
+          similique veritatis, unde tenetur dignissimos? Magni illum sit eaque, voluptatibus delectus sed esse quam
+          beatae aliquam. Fuga, repudiandae ipsam! Dignissimos voluptatem dolore non, in iusto sed. Blanditiis
+          necessitatibus repellendus libero! Quidem soluta quibusdam ab fugit reiciendis saepe deserunt consequuntur?
+        </div>
+        <div class="col-lg-6" style="background: sandybrown;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Quisquam culpa ad animi veritatis eligendi deleniti. Omnis optio voluptatem ratione reiciendis beatae, quia
+          consequuntur fuga. Molestias eligendi facere qui ab temporibus impedit debitis nisi sed beatae, soluta
+          similique veritatis, unde tenetur dignissimos? Magni illum sit eaque, voluptatibus delectus sed esse quam
+          beatae aliquam. Fuga, repudiandae ipsam! Dignissimos voluptatem dolore non, in iusto sed. Blanditiis
+          necessitatibus repellendus libero! Quidem soluta quibusdam ab fugit reiciendis saepe deserunt consequuntur?
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1>Part 5:</h1>
+        <h2>Text related classes in Bootstap</h2>
+        <div class="col-12">
+          <p style="padding: 50px 0px;" class="text-center text-uppercase fs-1 fw-bold fst-italic">Welcome to PMSPrototype</p>
+          <p style="padding: 50px 0px;" class="text-end fst-italic">Welcome to PMSPrototype</p>
+          <p style="padding: 50px 0px;" class="text-start">Welcome to PMSPrototype</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <h1>Part 6:</h1>
+        <h2>Utility classes (Spacing) in Bootstap</h2>
+        <div class="col-12">
+          <p style="padding: 50px 0px;" class="text-center text-uppercase fs-1 fw-bold fst-italic">Welcome to PMSPrototype</p>
+          <p style="padding: 50px 0px;" class="text-end fst-italic">Welcome to PMSPrototype</p>
+          <p style="padding: 50px 0px;" class="text-start">Welcome to PMSPrototype</p>
+          <p style="padding: 50px 0px;" class="text-center bg-gradient border-danger">Welcome to PMSPrototype</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
