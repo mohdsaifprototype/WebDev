@@ -42,35 +42,6 @@ font-family: 'PT Serif', serif; */
     font-family: var(--font2);
 }
 
-/* **************Nav links*********************** */
-.nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 5px 8px;
-    border-radius: 3px;
-    margin: 0 3px;
-    /* background-color: #2cafe318; */
-    background-color: brown;
-
-}
-
-.nav-link:hover {
-    transition: 0.3s;
-    color: yellow;
-    background-color: #111da6;
-    /* font-size: 1.6rem; */
-}
-
-.nav-link:active {
-    transition: 0.1s;
-    color: orange;
-}
-
-.nav-link:visited {
-    color: rgb(189, 185, 185);
-}
-
 /* ************************************************** */
 
 .parwaaz {
@@ -83,29 +54,6 @@ font-family: 'PT Serif', serif; */
 /* .in-shadow{
     box-shadow: 0px 0px 127px 55px var(--brand-color2),  0px 1px 751px 151px var(--brand-color1);
 } */
-
-.fixed-links {
-    width: 3rem;
-    max-width: 4rem;
-    list-style: none;
-    /* border: 3px solid slateblue; */
-    border-radius: 3px;
-    position: fixed;
-    bottom: 30%;
-    padding: 0.1rem;
-    background-color: rgba(255, 255, 255, 0.579);
-    z-index: 4;
-}
-
-.fixed-link {
-    margin: 4px 2px;
-    padding: 5px 2px;
-}
-
-.fixed-link:hover {
-    transition: 2s;
-    width: 3.25rem;
-}
 
 .footer {
     background-color: var(--brand-color1);

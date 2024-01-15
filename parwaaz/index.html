@@ -108,48 +108,80 @@
     </div>
   </header>
   <style>
-    .social-links {
+    .fixed-links {
+      width: 3rem;
+      max-width: 4rem;
+      list-style: none;
+      /* border: 3px solid slateblue; */
+      border-radius: 3px;
+      padding: 0.1rem;
+      background-color: rgba(255, 255, 255, 0.579);
+    }
+
+    .fixed-link {
+      margin: 4px 2px;
+      padding: 5px 2px;
+    }
+
+    .fixed-link:hover {
+      transition: 2s;
+      width: 3.25rem;
+    }
+
+    #social-links {
       border: 1px solid red;
-      width: max-content;
-      height: max-content;
+      /* width: fit-content; */
+      /* height: max-content; */
+      position: fixed;
+      z-index: 4;
+      border: 5px solid saddlebrown;
+    }
+
+    #toggle-links {
       background-color: rgba(137, 43, 226, 0.538);
+      width: 20px;
+      height: 30px;
+      
     }
   </style>
-  <ul class="fixed-links">
-    <!-- <div class="social-links">
-  hello there
-    </div> -->
-    <li class="fixed-link">
-      <a href="https://instagram.com/p_e_c_parwaaz?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
-        <img src="social-icons/instagram.svg" alt="instagram.svg" width="100%">
-      </a>
-    </li>
-    <li class="fixed-link">
-      <a href="https://www.facebook.com/PARWAAZ.EDUCATION.CENTER?mibextid=ZbWKwL">
-        <img src="social-icons/facebook.svg" alt="facebook.svg" width="100%">
-      </a>
-    </li>
-    <li class="fixed-link">
-      <a href="https://youtube.com/@parwaazedu">
-        <img src="social-icons/youtube.svg" alt="youtube.svg" width="100%">
-      </a>
-    </li>
-    <li class="fixed-link">
-      <a href="https://www.linkedin.com/company/pec-/">
-        <img src="social-icons/linkedin.svg" alt="linkein.svg" width="100%">
-      </a>
-    </li>
-    <li class="fixed-link">
-      <a href="https://twitter.com/parwaaz_center?t=GT3lS0S6fgjUBDTy7GHDjg&s=08">
-        <img src="social-icons/twitter-x.svg" alt="twitter.svg" width="100%">
-      </a>
-    </li>
-    <li class="fixed-link">
-      <a href="https://api.whatsapp.com/send/?phone=9101141608909&text&type=phone_number&app_absent=0">
-        <img src="social-icons/whatsapp.svg" alt="whatsapp.svg" width="100%">
-      </a>
-    </li>
-  </ul>
+  <div id="social-links">
+    <div id="toggle-links">
+    </div>
+    <ul class="fixed-links">
+      </li>
+      <li class="fixed-link">
+        <a href="https://instagram.com/p_e_c_parwaaz?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
+          <img src="assets/icons/social-icons/instagram.svg" alt="instagram.svg" width="100%">
+        </a>
+      </li>
+      <li class="fixed-link">
+        <a href="https://www.facebook.com/PARWAAZ.EDUCATION.CENTER?mibextid=ZbWKwL">
+          <img src="assets/icons/social-icons/facebook.svg" alt="facebook.svg" width="100%">
+        </a>
+      </li>
+      <li class="fixed-link">
+        <a href="https://youtube.com/@parwaazedu">
+          <img src="assets/icons/social-icons/youtube.svg" alt="youtube.svg" width="100%">
+        </a>
+      </li>
+      <li class="fixed-link">
+        <a href="https://www.linkedin.com/company/pec-/">
+          <img src="assets/icons/social-icons/linkedin.svg" alt="linkein.svg" width="100%">
+        </a>
+      </li>
+      <li class="fixed-link">
+        <a href="https://twitter.com/parwaaz_center?t=GT3lS0S6fgjUBDTy7GHDjg&s=08">
+          <img src="assets/icons/social-icons/twitter-x.svg" alt="twitter.svg" width="100%">
+        </a>
+      </li>
+      <li class="fixed-link">
+        <a href="https://api.whatsapp.com/send/?phone=9101141608909&text&type=phone_number&app_absent=0">
+          <img src="assets/icons/social-icons/whatsapp.svg" alt="whatsapp.svg" width="100%">
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <section id="home" class="section home">
     <div class="container bg-white text-center container-padding in-shadow">
       <h1 class="parwaaz">Parwaaz</h1>
