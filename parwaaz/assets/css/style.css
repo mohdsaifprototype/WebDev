@@ -5,293 +5,84 @@ font-family: 'Merriweather', serif;
 font-family: 'PT Serif', serif; */
 
 :root {
-    --brand-color1: #2c4ee3;
-    --brand-color2: #ff4d00;
-    --brand-color3: purple;
-    --paradise: #EF476F;
-    --crayola: #FFD166;
-    --green: #06D6A0;
-    --powder: #FFEABA;
-    --brand-font: "coco-sharp", sans-serif;
-    --font1: 'PT Serif', serif;
-    --font2: 'Libre Baskerville', serif;
-    --font3: 'Merriweather', serif;
-    --size1: 6rem;
-    --size2: 5rem;
-    --size3: 4rem;
-    --size4: 3rem;
-    --size5: 2rem;
-    --size6: 1rem;
-    --s1: 6em;
-    --s2: 5em;
-    --s3: 4em;
-    --s4: 3em;
-    --s5: 2em;
-    --s6: 1em;
-}
-
-/* CSS resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style for texts */
-body {
-    font-family: var(--font1);
-
-    /* Disable horizontal scrollbar */
-    overflow-x: hidden;
-
-    /* Smooth scrolling behavior */
-    scroll-behavior: smooth;
-
-    /* background-color: black; */
-}
-
-body::before {
-    content: "";
-    background: url(https://picsum.photos/3000/2000) black no-repeat center center/cover fixed;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100;
-    opacity: 50%;
-}
-
-.text-center {
-    text-align: center;
+  --brand-color1: #2c4ee3;
+  --brand-color2: #ff4d00;
+  --brand-color3: purple;
+  --paradise: #EF476F;
+  --crayola: #FFD166;
+  --green: #06D6A0;
+  --powder: #FFEABA;
+  --brand-font: "coco-sharp", sans-serif;
+  --font1: 'PT Serif', serif;
+  --font2: 'Libre Baskerville', serif;
+  --font3: 'Merriweather', serif;
 }
 
 .coco-font {
-    font-family: var(--brand-font);
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.bolder {
-    font-weight: bolder;
-}
-
-.italic {
-    font-style: italic;
+  font-family: var(--brand-font);
 }
 
 .primary-font {
-    font-family: var(--font1);
+  font-family: var(--font1);
 }
 
 .seconday-font {
-    font-family: var(--font2);
-}
-
-.bg-white {
-    background: white;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.75rem;
-}
-
-h5 {
-    font-size: 1.5rem;
-}
-
-h6 {
-    font-size: 1.25rem;
-}
-
-
-/* ******************************************* */
-main {
-    min-height: calc(100vh - 18vh);
-}
-
-.section {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-}
-
-.container {
-    max-width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 3px;
-}
-
-.nav-menu {
-    background-color: var(--brand-color1);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 5;
-    width: 100vw;
-    padding: 0.5rem;
-}
-
-.navbar {
-    /* border: 2px solid red; */
-    display: flex;
-    /* align-content: center; */
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    display: inline-block;
-    background-color: white;
-    border-radius: 8%;
-    max-height: 3.5rem;
-    max-width: 3.5rem;
-}
-
-.nav {
-    display: block;
-}
-
-.nav ul li {
-    list-style: none;
-    display: inline-block;
-}
-
-/* **************Nav links*********************** */
-.nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 5px 8px;
-    border-radius: 3px;
-    margin: 0 3px;
-    /* background-color: #2cafe318; */
-    background-color: brown;
-
-}
-
-.nav-link:hover {
-    transition: 0.3s;
-    color: yellow;
-    background-color: #111da6;
-    /* font-size: 1.6rem; */
-}
-
-.nav-link:active {
-    transition: 0.1s;
-    color: orange;
-}
-
-.nav-link:visited {
-    color: rgb(189, 185, 185);
+  font-family: var(--font2);
 }
 
 /* ************************************************** */
 
-iframe {
-    width: 100%;
-    height: 570px;
-    /* margin-top: 5rem; */
-}
-
 .parwaaz {
-    font-family: var(--brand-font);
-    font-size: var(--size1);
-    text-transform: uppercase;
-    color: #ff4d00;
-    text-align: center;
-    text-shadow: 2px 3px 3px blue;
+  font-family: var(--brand-font);
+  text-transform: uppercase;
+  color: #ff4d00;
+  text-shadow: 2px 3px 3px blue;
 }
 
 /* .in-shadow{
     box-shadow: 0px 0px 127px 55px var(--brand-color2),  0px 1px 751px 151px var(--brand-color1);
 } */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 30px 30px;
-    grid-auto-rows: minmax(400px, auto);
-    grid-auto-columns: minmax(300px, auto);
-    /* grid-column-gap: 16px;
-    grid-row-gap: 16px; */
-}
-
-.grid-card {
-    /*     border: 3px solid pink;*/
-    border-radius: 3px;
-    text-align: center;
-    background: var(--crayola);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    /* align-items: center; */
-}
-
-.grid-card img {
-    border-radius: 3px;
-}
-
 .fixed-links {
-    width: 3rem;
-    max-width: 4rem;
-    list-style: none;
-    /* border: 3px solid slateblue; */
-    border-radius: 3px;
-    position: fixed;
-    bottom: 30%;
-    padding: 0.1rem;
-    background-color: rgba(255, 255, 255, 0.579);
-    z-index: 4;
+  width: 3rem;
+  max-width: 4rem;
+  list-style: none;
+  border: 1px solid rgba(105, 90, 205, 0.438);
+  border-radius: 3px;
+  padding: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.579);
+  margin: 0 !important;
 }
 
 .fixed-link {
-    margin: 4px 2px;
-    padding: 5px 2px;
+  margin: 4px 2px;
+  padding: 5px 2px;
+  width: 100%;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .fixed-link:hover {
-    transition: 2s;
-    width: 3.25rem;
+  width: 3.25rem;
+}
+
+.social-links {
+  /* border: 1px solid red; */
+  position: fixed;
+  bottom: 30vh;
+  z-index: 4;
+}
+
+.toggle-links {
+  background-color: rgba(43, 226, 226, 0.241);
+  height: 20.5rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .footer {
-    background-color: var(--brand-color1);
-    color: white;
-    width: 100vw;
-    height: fit-content;
-    position: relative;
-    bottom: -1px;
-    left: 0;
-    padding: 10px 5px;
-}
-
-.home {
-    padding: 1rem;
-}
-
-.container-padding {
-    padding-left: 1rem;
-    padding-bottom: 2rem;
+  background-color: var(--brand-color1);
+  color: white;
+  width: 100vw;
+  position: relative;
+  bottom: -1px;
+  left: 0;
+  padding: 10px 5px;
 }
