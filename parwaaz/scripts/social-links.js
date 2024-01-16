@@ -7,7 +7,8 @@ document.write(`<style>
       display: none;
     }
   </style>
-  <div class="social-links d-flex">
+  <!-- <div class="social-links d-flex"> -->
+  <div class="social-links position-fixed top-50 start-0 translate-middle-y d-flex border rounded-end">
     <ul class="fixed-links">
       <li class="fixed-link">
         <a href="https://instagram.com/p_e_c_parwaaz?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D">
@@ -20,7 +21,7 @@ document.write(`<style>
         </a>
       </li>
       <li class="fixed-link">
-        <a href="https://youtube.com/@parwaazedu">
+        <a href="https://www.youtube.com/@ParwaazEducation-cc2wl">
           <img src="assets/icons/social-icons/youtube.svg" alt="youtube.svg" width="100%">
         </a>
       </li>
@@ -40,7 +41,7 @@ document.write(`<style>
         </a>
       </li>
     </ul>
-    <div class="toggle-links d-flex align-items-center" onclick="toggleHide()">
+    <div class="toggle-links d-flex align-items-center" onclick="toggleHide()" title="show/hide">
       <!-- For PC -->
       <!-- <div class="d-none d-sm-block d-flex"> -->
       <div>

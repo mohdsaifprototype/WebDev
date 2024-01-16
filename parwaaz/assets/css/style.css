@@ -66,8 +66,8 @@ font-family: 'PT Serif', serif; */
 
 .social-links {
   /* border: 1px solid red; */
-  position: fixed;
-  bottom: 30vh;
+  /* position: fixed;
+  bottom: 30vh; */
   z-index: 4;
 }
 
