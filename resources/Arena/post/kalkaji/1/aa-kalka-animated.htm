@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arena Animation Kalkaji</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      main {
+        max-width: max-content;
+        /* Animation */
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+      }
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        left: 285px;
+        top: -15px;
+      }
+      .container {
+        /* border: 5px solid gray; */
+        border: 2mm ridge gray;
+        width: 285px;
+        height: 125px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-radius: 3px;
+      }
+      .container > div:nth-child(1) {
+        text-shadow: 2px 2px 2px black, -1px 0px 2px orange;
+        font-stretch: ultra-condensed;
+        color: red;
+        padding-left: 15px;
+        font-size: 55px;
+        line-height: 1;
+        letter-spacing: 0.309em;
+        font-weight: 700;
+        width: 280px;
+        letter-spacing: 0.421em;
+        padding-left: 12px;
+      }
+      .container > div:nth-child(3) {
+        font-size: 40px;
+        text-shadow: 2px 1px 2px black, -1px 0px 1px orange;
+        letter-spacing: 0.118em;
+        font-weight: lighter;
+        color: gray;
+        background: yellow;
+        width: 100%;
+        height: 100%;
+        padding-left: 5px;
+        font-family: "Fira Sans", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1;
+        letter-spacing: 0.2em;
+      }
+
+      hr {
+        width: 95%;
+        height: 10%;
+        background-color: gray;
+        border-radius: 2px;
+        position: relative;
+        top: 3px;
+      }
+      #kalkaji {
+        letter-spacing: 0.5em;
+        font-weight: 600;
+        font-size: 37px;
+        text-transform: uppercase;
+        /* border: 3px solid rgb(26, 22, 22); */
+        border-top: 3px solid rgb(26, 22, 22);
+        border-bottom: 3px solid rgb(24, 0, 0);
+        width: 285px;
+        padding-left: 7px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span>&reg;</span>
+      <div class="container">
+        <div>Arena</div>
+        <hr />
+        <div>Animation</div>
+      </div>
+      <div id="kalkaji">kalkaji</div>
+    </main>
+  </body>
+</html>
