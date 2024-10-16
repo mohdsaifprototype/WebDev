@@ -2,67 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Pseudo Selectors & more designing</title>
-    <style>
-        .container {
-            border: 2px solid red;
-            background-color: rgb(254, 225, 222);
-            padding: 34px;
-            margin: 34px auto;
-            width: 500px;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo Selectors & more designing</title>
+  <style>
+    .container {
+      border: 2px solid red;
+      background-color: rgb(254, 225, 222);
+      padding: 34px;
+      margin: 34px auto;
+      width: 500px;
+    }
 
-        .btn {
-            background-color: rgb(254, 254, 254);
-            padding: 6px;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-            border-radius: 4px;
+    .btn {
+      background-color: rgb(254, 254, 254);
+      padding: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 4px;
+    }
 
-        }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+    a:visited {
+      color: aqua;
+      background-color: black;
+    }
 
-        a:visited {
-            color: aqua;
-            background-color: black;
-        }
+    a:hover {
+      color: green;
+      background-color: greenyellow;
+    }
 
-        a:hover {
-            color: green;
-            background-color: greenyellow;
-        }
+    a:active {
+      color: yellow;
+      background-color: blue;
+    }
 
-        a:active {
-            color: yellow;
-            background-color: blue;
-        }
+    button:hover {
+      background-color: brown;
+    }
 
-        button:hover{
-            background-color: brown;
-        }
-        .btn:hover{
-            font-size: larger;
-        }
-    </style>
+    .btn:hover {
+      font-size: larger;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container" id="cont1">
-        <h3>This is my heading</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam at eum, soluta pariatur provident ut esse ipsa
-            consequatur iure error vitae itaque vel, suscipit velit similique. Exercitationem saepe debitis numquam
-            autem. Fugiat, quae laborum.</p>
-        <a href="https://picsum.photos/" class="btn">Read more...</a>
-        <button class="btn">Contact us</button>
-    </div>
+  <div class="container" id="cont1">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam at eum, soluta pariatur provident ut esse ipsa
+      consequatur iure error vitae itaque vel, suscipit velit similique. Exercitationem saepe debitis numquam
+      autem. Fugiat, quae laborum.</p>
+    <a href="https://picsum.photos/" class="btn">Read more...</a>
+    <button class="btn">Contact us</button>
+  </div>
 </body>
 
 </html>

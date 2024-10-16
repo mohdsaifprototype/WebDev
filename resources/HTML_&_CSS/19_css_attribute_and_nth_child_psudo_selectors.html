@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute and nth child psudo selectors</title>
     <style>
+        body{
+            font-size: 1.5rem;
+        }
         .container {
             width: min-content;
             margin: auto;
@@ -28,7 +31,7 @@
 
         a[target='_self'] {
             font-size: 30px;
-            color: orange;
+            color: orange ;
         }
 
         input[type='email'] {
@@ -37,25 +40,25 @@
         }
 
         /* li:nth-child(3) means trigger only 3rd li element in the list */
-        /* li:nth-child(3){
+        li:nth-child(6){
             color: blueviolet;
-        } */
+        }
 
         /* li:nth-child(2n+0) means trigger li elements which are on multiple of 2 in the list */
-        li:nth-child(2n+0) {
-            color: gray;
-        }
+        /* li:nth-child(2n+0) {
+            color: gray !important;
+        } */
 
         /* Odd child */
-        li:nth-child(odd) {
+        /* li:nth-child(odd) {
             color: yellow;
             background-color: gray;
-        }
+        } */
 
         /* Even child */
-        li:nth-child(even) {
+        /* li:nth-child(even) {
             background-color: yellow;
-        }
+        } */
     </style>
 </head>
 

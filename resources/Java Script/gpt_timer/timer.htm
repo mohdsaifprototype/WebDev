@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #stopwatch {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    #milliseconds {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="stopwatch">00:00:00</div>
+  <div id="milliseconds">000</div>
+
+  <div id="buttons">
+    <button id="startBtn">Start</button>
+    <button id="stopResumeBtn">Stop/Resume</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script>
+    let stopwatchInterval;
+    let milliseconds = 0;
+    let isRunning = false;
+
+    function updateStopwatch() {
+      milliseconds += 100;
+      let seconds = Math.floor(milliseconds / 1000);
+      let minutes = Math.floor(seconds / 60);
+      let hours = Math.floor(minutes / 60);
+
+      seconds %= 60;  // seconds = seconds % 60
+      minutes %= 60;  // minutes = minutes % 60
+
+      const formattedMilliseconds = String(milliseconds % 1000).padStart(3, '0');
+      document.getElementById("stopwatch").innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      document.getElementById("milliseconds").innerText = formattedMilliseconds;
+    }
+
+    function startStopwatch() {
+      if (!isRunning) {
+        stopwatchInterval = setInterval(updateStopwatch, 100);
+        isRunning = true;
+      }
+    }
+
+    function stopResumeStopwatch() {
+      if (isRunning) {
+        clearInterval(stopwatchInterval);
+        isRunning = false;
+      } else {
+        startStopwatch();
+      }
+    }
+
+    function resetStopwatch() {
+      clearInterval(stopwatchInterval);
+      milliseconds = 0;
+      isRunning = false;
+      updateStopwatch();
+    }
+
+    document.getElementById("startBtn").addEventListener("click", startStopwatch);
+    document.getElementById("stopResumeBtn").addEventListener("click", stopResumeStopwatch);
+    document.getElementById("resetBtn").addEventListener("click", resetStopwatch);
+  </script>
+
+</body>
+
+</html> 

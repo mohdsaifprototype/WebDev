@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-bg: #01cdce;
+  --secondary-bg: #02a8a8;
+  --primary-color: #1a1a1a;
+  --secondary-color: #6e6e6e;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+}
+/* Navbar styling */
+
+/* Utilities */
+body,
+body * {
+  font-family: var(--primary-font);
+  color: #1a1a1a;
+}
+/* Utility end */
+
+/* Navbar */
+.pg__navbar {
+  background-color: #01cdce; /* Background color from the image */
+  border: none; /* Removing default border */
+  margin-bottom: 0;
+  padding: 0 0 0 20px;
+}
+
+.pg__nav-ham-icon {
+  all: unset;
+  cursor: pointer;
+}
+
+.pg__navbar-toggle {
+  margin-top: 10px;
+}
+
+.pg__navbar-nav {
+  margin-left: 20px;
+}
+
+.pg__nav-item {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pg__nav-item img {
+  height: 30px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.pg__navbar-collapse{
+  padding-left: max(0px, calc((100% - 400px) / 2));
+}
+
+/* Search Bar Styling */
+.pg__search-bar {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.pg__search-bar input {
+  border-radius: 25px;
+  padding: 5px 15px;
+  border: none;
+  width: 250px;
+  background-color: white;
+}
+
+/* Aligning the search icon */
+.pg__search-bar .glyphicon-search {
+  position: absolute;
+  right: 45px;
+  top: 12px;
+  color: #333;
+}
+
+/* Right-side icons */
+.pg__nav-icons img {
+  height: 30px;
+  width: auto;
+  margin-left: 15px;
+}
+
+/* Section Styling */
+.pg__sections {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Aside Element */
+.pg__left {
+  width: 73px;
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  gap: 16px;
+}
+
+/* Main Element */
+
+.pg__right {
+  width: 100%;
+  padding: 20px;
+}
+
+.pg__section {
+  margin-bottom: 20px;
+}
+
+.pg__section2 {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 12px;
+}
+
+
+
+/* Table Styling */
+.pg__header-caption {
+  background-color: var(--primary-bg);
+}
+.pg__table-head {
+  background-color: #EFEFEF;
+}

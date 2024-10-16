@@ -2,60 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS selector methods</title>
-    <style>
-        h1 {
-            background-color: rgb(246, 255, 0);
-            color: black;
-            font-weight: bold;
-            text-align: center;
-        }
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS selector methods</title>
+	<style>
+		/* h1 {
+			background-color: rgb(246, 255, 0);
+			color: black;
+			font-weight: bold;
+			text-align: center;
+		} */
 
-        /* div p {
-            color: yellow;
-            background-color: green;
-            font-weight: bold;
-        } */
+		/* div p {
+			color: yellow;
+			background-color: green;
+			font-weight: bold;
+		} */
 
-        /* If p is contaiend by any li which is contained by div */
-        /* div li p {
-            color: yellow;
-            background-color: green;
-            font-weight: bold;
-        } */
+		/* If p is contaiend by any li which is contained by div */
+		/* div li p {
+			color: yellow;
+			background-color: green;
+			font-weight: bold;
+		} */
 
-        /* if p is directly inside div the this CSS will be applied */
-        div>p {
-            color: yellow;
-            background-color: green;
-            font-weight: bold;
-        }
+		/* if p is directly inside div the this CSS will be applied */
+		/* div > p {
+			color: yellow;
+			background-color: green;
+			font-weight: bold;
+		} */
 
-        /* If p is right after div i.e., p is the next sibling of div */
-        div+p {
-            color: white;
-            background-color: rgb(85, 76, 76);
-        }
-    </style>
+		/* If p is right after div i.e., p is the next sibling of div */
+		/* div + p {
+			color: white;
+			background-color: rgb(85, 76, 76);
+		} */
+	</style>
 </head>
 
 <body>
-    <h1>This is an h1 heading</h1>
-    <div class="container">
-        <div class="row">
-            <ul>
-                <li>
-                    <p>This is a paragraph inside li</p>
-                </li>
-            </ul>
-            <p>This is a paragraph of div.row class</p>
-        </div>
-        <p>This is a paragraph of div.container class</p>
-    </div>
-    <p>This is an outermost paragraph of body</p>
+	<h1>This is an h1 heading</h1>
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li>
+					<p>This is a paragraph inside li</p>
+				</li>
+			</ul>
+			<p>This is a paragraph of div.row class</p>
+		</div>
+		
+		<p>This is a paragraph of div.container class</p>
+
+	</div>
+	<p>This is an outermost paragraph of body</p>
 </body>
 
 </html>

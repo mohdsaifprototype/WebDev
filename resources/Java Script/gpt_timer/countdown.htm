@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #timer {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    #inputs {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input {
+      width: 50px;
+      padding: 5px;
+      font-size: 1em;
+      text-align: center;
+    }
+
+    label {
+      font-size: 1.2em;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="timer">00:00:00:000</div>
+
+  <div id="inputs">
+    <label for="hours">Hours: </label>
+    <input type="number" id="hours" min="0" value="0">
+
+    <label for="minutes">Minutes: </label>
+    <input type="number" id="minutes" min="0" value="0">
+
+    <label for="seconds">Seconds: </label>
+    <input type="number" id="seconds" min="0" value="10">
+  </div>
+
+  <div id="buttons">
+    <button id="startBtn">Start</button>
+    <button id="pauseContinueBtn" disabled>Pause/Continue</button>
+    <button id="resetBtn" disabled>Reset</button>
+    <button id="restartBtn" disabled>Restart</button>
+  </div>
+
+  <script>
+    let countdownInterval;
+    let millisecondsRemaining;
+    let isRunning = false;
+
+    function updateTimer() {
+      const hours = Math.floor(millisecondsRemaining / (3600 * 1000));
+      const minutes = Math.floor((millisecondsRemaining % (3600 * 1000)) / (60 * 1000));
+      const seconds = Math.floor((millisecondsRemaining % (60 * 1000)) / 1000);
+      const milliseconds = millisecondsRemaining % 1000;
+
+      document.getElementById("timer").innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(3, '0')}`;
+    }
+
+    function startCountdown() {
+      const hoursInput = parseInt(document.getElementById("hours").value) || 0;
+      const minutesInput = parseInt(document.getElementById("minutes").value) || 0;
+      const secondsInput = parseInt(document.getElementById("seconds").value) || 0;
+
+      millisecondsRemaining = (hoursInput * 3600 + minutesInput * 60 + secondsInput) * 1000;
+
+      if (!isRunning) {
+        countdownInterval = setInterval(() => {
+          millisecondsRemaining -= 10;  // millisecondsRemaining = millisecondsRemaining - 10 
+          updateTimer();
+
+          if (millisecondsRemaining <= 0) {
+            clearInterval(countdownInterval);
+            isRunning = false;
+            enableButtons(["resetBtn", "restartBtn"]);
+          }
+        }, 10);
+
+        isRunning = true;
+        disableButtons(["startBtn"]);
+        enableButtons(["pauseContinueBtn"]);
+      }
+    }
+
+    function pauseContinueCountdown() {
+      if (isRunning) {
+        clearInterval(countdownInterval);
+        isRunning = false;
+        enableButtons(["pauseContinueBtn", "resetBtn", "restartBtn"]);
+        disableButtons(["startBtn"]);
+      } else {
+        countdownInterval = setInterval(() => {
+          millisecondsRemaining -= 10;
+          updateTimer();
+
+          if (millisecondsRemaining <= 0) {
+            clearInterval(countdownInterval);
+            isRunning = false;
+            enableButtons(["resetBtn", "restartBtn"]);
+          }
+        }, 10);
+
+        isRunning = true;
+        enableButtons(["pauseContinueBtn"]);
+        disableButtons(["startBtn"]);
+      }
+    }
+
+    function resetCountdown() {
+      clearInterval(countdownInterval);
+      isRunning = false;
+      millisecondsRemaining = 0;
+      updateTimer();
+      enableButtons(["startBtn"]);
+      disableButtons(["pauseContinueBtn", "resetBtn", "restartBtn"]);
+    }
+
+    function restartCountdown() {
+      resetCountdown();
+      startCountdown();
+    }
+
+    function disableButtons(buttonIds) {
+      buttonIds.forEach(id => {
+        document.getElementById(id).disabled = true;
+      });
+    }
+
+    function enableButtons(buttonIds) {
+      buttonIds.forEach(id => {
+        document.getElementById(id).disabled = false;
+      });
+    }
+
+    document.getElementById("startBtn").addEventListener("click", startCountdown);
+    document.getElementById("pauseContinueBtn").addEventListener("click", pauseContinueCountdown);
+    document.getElementById("resetBtn").addEventListener("click", resetCountdown);
+    document.getElementById("restartBtn").addEventListener("click", restartCountdown);
+  </script>
+
+</body>
+
+</html>
