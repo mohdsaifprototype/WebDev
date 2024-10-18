@@ -20,7 +20,7 @@ body * {
 
 /* Navbar */
 .pg__navbar {
-  background-color: #01cdce; /* Background color from the image */
+  background-color: var(--primary-bg); /* Background color from the image */
   border: none; /* Removing default border */
   margin-bottom: 0;
   padding: 0 0 0 20px;
@@ -51,7 +51,7 @@ body * {
   margin-right: 8px;
 }
 
-.pg__navbar-collapse{
+.pg__navbar-collapse {
   padding-left: max(0px, calc((100% - 400px) / 2));
 }
 
@@ -59,15 +59,50 @@ body * {
 .pg__search-bar {
   display: flex;
   align-items: center;
-  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 .pg__search-bar input {
-  border-radius: 25px;
-  padding: 5px 15px;
+  flex: 1;
   border: none;
-  width: 250px;
-  background-color: white;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.pg__search-bar input::placeholder {
+  color: #666;
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #444;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.search-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .pg__search-bar {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pg__search-bar input {
+    font-size: 14px;
+  }
 }
 
 /* Aligning the search icon */
@@ -113,18 +148,73 @@ body * {
   margin-bottom: 20px;
 }
 
-.pg__section2 {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 12px;
+/* section2 */
+
+.pg__gaugeChart {
+  border: 2px solid #334249;
 }
 
+.pg__gaugeChart canvas{
+  width: 100% !important;
+  height: auto !important;
+}
+/* Section2 end */
 
+/* section3 */
+
+.pg__chart-container {
+  background-color: white;
+  border: 2px solid var(--primary-bg);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  background-color: var(--primary-bg);
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* canvas {
+  width: 100% !important;
+  height: auto !important;
+} */
+
+@media (max-width: 768px) {
+  .chart-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* section3 end */
+
+/* section4 */
+.pg__section4 .pg__chart-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.progress-charts{
+  max-width: 250px;
+  max-height: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  margin-bottom: 20px;
+}
 
 /* Table Styling */
 .pg__header-caption {
   background-color: var(--primary-bg);
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 24px;
 }
 .pg__table-head {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }

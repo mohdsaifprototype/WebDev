@@ -2,70 +2,820 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashboard</title>
-
-    <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-  </head>
 
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
   <body>
     <header>
-      <nav class="navbar navbar-default bg-primary" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-ex1-collapse"
+      <nav class="navbar pg__navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#pg__navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/icons/logo.svg" alt="Brand Logo" />
+            </a>
+            <button class="pg__nav-ham-icon" type="button">
+              <img src="assets/img/icons/hamburger-icon.svg" alt="Menu" />
+            </button>
+          </div>
+
+          <div
+            class="collapse navbar-collapse pg__navbar-collapse"
+            id="pg__navbar-collapse"
           >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="dashboard.html"
-            ><img src="assets/img/icons/logo.svg" alt="brand-logo"
-          /></a>
+            <ul class="nav navbar-nav pg__navbar-nav">
+              <li class="pg__nav-item"><a href="#">Lorem ipsum dolor</a></li>
+            </ul>
+            <form class="navbar-form navbar-left pg__search-bar" role="search">
+              <div class="form-group pg__form-group">
+                <button class="btn form-control">
+                  <img
+                    src="assets/img/icons/search-ham-icon.svg"
+                    alt="search"
+                  />
+                </button>
 
-          <button class="btn bg-primary">
-            <img src="assets/img/icons/hamburger-icon.svg" alt="menu" />
-          </button>
-        </div>
+                <input type="text" class="form-control" placeholder="Search" />
+                <button class="btn form-control">
+                  <img src="assets/img/icons/search-icon.svg" alt="search" />
+                </button>
+              </div>
+            </form>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search" />
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >Dropdown <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right pg__nav-icons">
+              <li>
+                <a href="#"
+                  ><img
+                    src="assets/img/icons/clipboard-icon.svg"
+                    alt="clipboard-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/icons/Calander.svg" alt="Calander"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/icons/User.svg" alt="Icon 3"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
+
+    <div class="pg__sections">
+      <aside class="pg__left">
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon1.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon2.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon3.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon4.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon5.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon6.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon7.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon8.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon9.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon10.svg" alt=""
+        /></a>
+        <a class="pg__aside-icon" href="#"
+          ><img src="assets/img/icons/aside-icon11.svg" alt=""
+        /></a>
+      </aside>
+      <main class="pg__right">
+        <div class="pg__section pg__section1">
+          <form action="#">
+            <label for="select1" class="pg__select">
+              Lorem ipsum
+              <select class="text" name="select1" id="select1">
+                <option value="Option 1">9999</option>
+              </select>
+            </label>
+            <label for="select2" class="pg__select">
+              Lorem
+              <select name="select2" id="select2">
+                <option value="Option 1">99</option>
+              </select>
+            </label>
+            <label for="select3" class="pg__select">
+              Loreion
+              <select name="select3" id="select3">
+                <option value="Option 1">X</option>
+              </select>
+            </label>
+            <label for="select4" class="pg__select">
+              Loremipsum
+              <select name="select4" id="select4">
+                <option value="Option 1">Option 1</option>
+              </select>
+            </label>
+          </form>
+        </div>
+
+        <div class="pg__section pg__section2">
+          <table class="table table-bordered">
+            <thead>
+              <tr class="pg__header-caption">
+                <th class="text-center" colspan="5">Lorem</th>
+              </tr>
+              <tr class="pg__table-head">
+                <th>Lorem</th>
+                <th>Lorem</th>
+                <th>Lorem</th>
+                <th>Lorem</th>
+                <th>Lorem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="pg__header-caption">
+                <th class="text-center" colspan="2">Lorem</th>
+              </tr>
+              <tr class="pg__table-head">
+                <th>Lorem</th>
+                <th>Lorem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr class="pg__header-caption">
+                <th class="text-center" colspan="2">Lorem</th>
+              </tr>
+              <tr class="pg__table-head">
+                <th>Lorem</th>
+                <th>Lorem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <th>Lorem</th>
+                <td>Lorem</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pg__section pg__section5">
+          <table class="table table-bordered">
+            <thead>
+              <tr class="pg__header-caption">
+                <th class="text-center" colspan="11">Lorem Ipsum</th>
+              </tr>
+              <tr class="pg__table-head">
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>
+                  Lorem <br />
+                  Ipsum
+                </td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>
+                  Lorem <br />
+                  Ipsum
+                </td>
+                <td>
+                  Lorem <br />
+                  Ipsum
+                </td>
+                <td>
+                  Lorem <br />
+                  Ipsum
+                </td>
+                <td>
+                  Lorem <br />
+                  Ipsum
+                </td>
+                <td>Lorem</td>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>1</td>
+                <td>08/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>18</td>
+                <td>1</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 2 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>2</td>
+                <td>08/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>15</td>
+                <td>12</td>
+                <td>2</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>3</td>
+                <td>08/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>25</td>
+                <td>20</td>
+                <td>4</td>
+                <td>2</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 4 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>4</td>
+                <td>08/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>30</td>
+                <td>25</td>
+                <td>3</td>
+                <td>2</td>
+                <td>83.00%</td>
+              </tr>
+              <!-- Row 5 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>5</td>
+                <td>09/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>10</td>
+                <td>9</td>
+                <td>1</td>
+                <td>0</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 6 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>6</td>
+                <td>09/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>16</td>
+                <td>3</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 7 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>7</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>18</td>
+                <td>1</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 8 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>8</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>15</td>
+                <td>12</td>
+                <td>2</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 9 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>9</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>25</td>
+                <td>20</td>
+                <td>4</td>
+                <td>2</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 10 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>10</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>30</td>
+                <td>25</td>
+                <td>3</td>
+                <td>2</td>
+                <td>83.00%</td>
+              </tr>
+              <!-- Row 11 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>11</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>10</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 12 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>12</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>16</td>
+                <td>3</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 13 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>13</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>18</td>
+                <td>1</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 14 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>14</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>15</td>
+                <td>12</td>
+                <td>2</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 15 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>15</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>25</td>
+                <td>20</td>
+                <td>4</td>
+                <td>2</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 16 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>16</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>30</td>
+                <td>25</td>
+                <td>3</td>
+                <td>2</td>
+                <td>83.00%</td>
+              </tr>
+              <!-- Row 17 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>17</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>10</td>
+                <td>9</td>
+                <td>0</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 18 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>18</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>16</td>
+                <td>3</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 19 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>19</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>20</td>
+                <td>18</td>
+                <td>1</td>
+                <td>1</td>
+                <td>90.00%</td>
+              </tr>
+              <!-- Row 20 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>20</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>15</td>
+                <td>12</td>
+                <td>2</td>
+                <td>1</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 21 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>21</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>25</td>
+                <td>20</td>
+                <td>4</td>
+                <td>2</td>
+                <td>80.00%</td>
+              </tr>
+              <!-- Row 22 -->
+              <tr>
+                <td>Lorem Ips</td>
+                <td>22</td>
+                <td>10/07/24</td>
+                <td>Lorem</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem</td>
+                <td>30</td>
+                <td>25</td>
+                <td>3</td>
+                <td>2</td>
+                <td>83.00%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pg__section pg__section6">
+          <table class="table table-bordered">
+            <thead>
+              <tr class="pg__header-caption">
+                <th class="text-center" colspan="13">Lorem Ipsum</th>
+              </tr>
+              <tr class="pg__table-head">
+                <td>Lorem Impsum</td>
+                <td>Lorem ipsum</td>
+                <td>Loremmmm Ipsum</td>
+                <td>Lorem Ipyum</td>
+                <td>Loremmmmm Ipsum</td>
+                <td>Lorenn (Ipsummms)</td>
+                <td>Lorem Ipsum</td>
+                <td>Lorem Ipsum</td>
+                <td>Loremsms/ipsumnn</td>
+                <td>Ioremm Ipsum</td>
+                <td>Lore-rem Ipsume</td>
+                <td>Rloremd Ipsum</td>
+                <td>Lorenen Ipsumm</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09/06/24</td>
+                <td>1</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>09/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>09/06/24</td>
+                <td>2</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>12/06/24</td>
+                <td>12/06/24</td>
+                <td>13/06/24</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <td>10/06/24</td>
+                <td>3</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>10/06/24</td>
+                <td>1</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>09/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>10/06/24</td>
+                <td>2</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>12/06/24</td>
+                <td>12/06/24</td>
+                <td>13/06/24</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <td>11/06/24</td>
+                <td>3</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>11/06/24</td>
+                <td>1</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>09/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>12/06/24</td>
+                <td>2</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>12/06/24</td>
+                <td>12/06/24</td>
+                <td>13/06/24</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <td>12/06/24</td>
+                <td>3</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>13/06/24</td>
+                <td>2</td>
+                <td>Lorem ipsum</td>
+                <td>09/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>12/06/24</td>
+                <td>12/06/24</td>
+                <td>13/06/24</td>
+                <td>Lorem</td>
+              </tr>
+              <tr>
+                <td>13/06/24</td>
+                <td>3</td>
+                <td>Lorem ipsum</td>
+                <td>10/06/24</td>
+                <td>10/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>11/06/24</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
