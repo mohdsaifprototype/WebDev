@@ -80,9 +80,18 @@
 
     <div class="pg__sections">
       <aside class="pg__left">
-        <button class="pg__nav-ham-icon" type="button">
-          <img src="assets/img/icons/hamburger-icon.svg" alt="Menu" />
-        </button>
+        <a class="pg__aside-icon" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            fill="#fff"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </a>
         <a class="pg__aside-icon" href="#"
           ><img src="assets/img/icons/aside-icon1.svg" alt=""
         /></a>
@@ -119,37 +128,51 @@
       </aside>
       <main class="pg__right">
         <div class="pg__section pg__section1">
-          <form action="#">
-            <label for="select1" class="pg__select">
-              Lorem ipsum
-              <select class="text" name="select1" id="select1">
-                <option value="Option 1">9999</option>
-              </select>
-            </label>
-            <label for="select2" class="pg__select">
-              Lorem
-              <select name="select2" id="select2">
-                <option value="Option 1">99</option>
-              </select>
-            </label>
-            <label for="select3" class="pg__select">
-              Loreion
-              <select name="select3" id="select3">
-                <option value="Option 1">X</option>
-              </select>
-            </label>
-            <label for="select4" class="pg__select">
-              Loremipsum
-              <select name="select4" id="select4">
-                <option value="Option 1">Option 1</option>
-              </select>
-            </label>
-          </form>
+          <div class="row">
+            <div class="col-md-4">
+              <form action="#" class="form-horizontal">
+                <label for="select1" class="pg__select"> Lorem ipsum </label>
+                <select class="text" name="select1" id="select1">
+                  <option value="Option 1">9999</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-md-1">
+              <form action="#" class="form-inline">
+                <label for="select2" class="pg__select">
+                  Lorem
+                </label>
+                <select name="select2" id="select2">
+                  <option value="Option 1">99</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-md-1">
+              <form action="#" class="form-inline">
+                <label for="select3" class="pg__select">
+                  Loreion
+                </label>
+                <select name="select3" id="select3">
+                  <option value="Option 1">X</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form action="#" class="form-inline">
+                <label for="select4" class="pg__select">
+                  Loremipsum
+                </label>
+                <select name="select4" id="select4">
+                  <option value="Option 1">Option 1</option>
+                </select>
+              </form>
+            </div>
+          </div>
         </div>
 
         <div class="pg__section pg__section2">
           <div class="row">
-            <div class="col-md-5 col-12">
+            <div class="col-md-4 col-12">
               <h2 class="pg__header-caption text-center">Lorem</h2>
               <table class="table table-bordered">
                 <thead>
@@ -237,7 +260,7 @@
                 </tbody>
               </table>
             </div>
-            <div class="col-md-2 col-12">
+            <div class="col-md-3 col-12">
               <h2 class="pg__header-caption text-center">Lorem</h2>
               <table class="table table-bordered">
                 <thead>
@@ -288,14 +311,14 @@
               </div>
             </div>
             <!-- Pie Chart -->
-            <div class="col-md-3">
+            <div class="col-md-2">
               <div class="pg__chart-container">
                 <h3>Lorem Ipsum</h3>
                 <canvas id="pieChart"></canvas>
               </div>
             </div>
             <!-- Line Chart -->
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div class="pg__chart-container">
                 <h3>Lorem Ipsum</h3>
                 <canvas id="lineChart"></canvas>
@@ -308,27 +331,22 @@
           <h3 class="pg__header-caption text-center">Lorem Ipsum</h3>
           <div class="pg__chart-container">
             <div>
-
               <div class="progress-charts"></div>
               <button type="button" class="btn btn-default">Lorem</button>
             </div>
             <div>
-
               <div class="progress-charts"></div>
               <button type="button" class="btn btn-default">Lorem</button>
             </div>
             <div>
-
               <div class="progress-charts"></div>
               <button type="button" class="btn btn-default">Lorem</button>
             </div>
             <div>
-
               <div class="progress-charts"></div>
               <button type="button" class="btn btn-default">Lorem</button>
             </div>
             <div>
-
               <div class="progress-charts"></div>
               <button type="button" class="btn btn-default">Lorem</button>
             </div>

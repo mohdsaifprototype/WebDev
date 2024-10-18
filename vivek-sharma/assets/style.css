@@ -137,6 +137,16 @@ body * {
   gap: 16px;
 }
 
+.pg__aside-icon {
+  all: unset;
+  cursor: pointer;
+}
+
+.pg__aside-icon :first-child {
+  height: 30px;
+  width: auto;
+}
+
 /* Main Element */
 
 .pg__right {
@@ -148,15 +158,37 @@ body * {
   margin-bottom: 20px;
 }
 
+/* Section1 */
+.pg__section1 form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
 /* section2 */
 
 .pg__gaugeChart {
   border: 2px solid #334249;
 }
 
+.pg__gaugeChartContainer{
+  height: 100%;
+}
+
+.pg__gaugeChart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .pg__gaugeChart canvas{
-  width: 100% !important;
-  height: auto !important;
+  /* width: 100% !important; */
+  height: 100% !important;
 }
 /* Section2 end */
 
@@ -177,11 +209,6 @@ h3 {
   font-size: 24px;
 }
 
-/* canvas {
-  width: 100% !important;
-  height: auto !important;
-} */
-
 @media (max-width: 768px) {
   .chart-container {
     margin-bottom: 20px;
@@ -200,10 +227,10 @@ h3 {
 }
 
 .progress-charts{
-  max-width: 250px;
-  max-height: 250px;
-  min-width: 250px;
-  min-height: 250px;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 160px;
+  min-height: 160px;
   margin-bottom: 20px;
 }
 

@@ -225,7 +225,11 @@ const lineChart = new Chart(lineCtx, {
       y: {
         beginAtZero: false, // Customizable start value for y-axis
         suggestedMin: 8.5, // Custom example start value for y-axis
-        suggestedMax: 10.5, // Custom max value for y-axis
+        suggestedMax: 10, // Custom max value for y-axis
+        ticks: {
+          stepSize: 0.5,
+          barHeight: 10,
+        },
       },
     },
   },
