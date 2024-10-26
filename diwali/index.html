@@ -36,7 +36,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         text-align: center;
         color: #fff;
         position: relative;
@@ -44,7 +44,6 @@
         position: relative;
         z-index: 1;
       }
-
 
       header h1 {
         font-size: 5rem;
@@ -174,7 +173,6 @@
         header h1 {
           font-size: 4rem;
         }
-        
 
         .contest-category div {
           width: 45%; /* Two columns for tablets */
@@ -188,7 +186,7 @@
         header {
           background: url(tab.png) no-repeat center center/cover;
         }
-       
+
         .contest-category div {
           width: 100%; /* One column for mobile devices */
           margin-bottom: 20px;
@@ -206,7 +204,7 @@
         header {
           background: url(mobile.png) no-repeat center center/cover;
         }
-        
+
         .contest-category div {
           padding: 15px;
         }
@@ -216,11 +214,125 @@
         }
       }
     </style>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #630462;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Button Styling */
+      .diwali-btn {
+        background: linear-gradient(45deg, #ff9c33, #ff4d4d);
+        border: none;
+        padding: 12px 24px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(255, 0, 66, 0.3);
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        margin-top: 20px;
+        position: relative;
+        bottom: 40px;
+      }
+
+      .diwali-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 14px rgba(255, 0, 66, 0.5);
+      }
+
+      /* Popup Styling */
+      .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+      }
+      .popup-content {
+        background: #fff9e6;
+        padding: 20px;
+        width: 90%;
+        max-width: 500px;
+        text-align: start;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        font-size: 1.2rem;
+        color: #333;
+        white-space: pre-line;
+        position: relative;
+        animation: fadeInPopup 0.5s ease-in-out;
+      }
+      .popup-content::before {
+        content: "🎉";
+        font-size: 2rem;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+      }
+      .popup-content::after {
+        content: "✨";
+        font-size: 2rem;
+        position: absolute;
+        top: -20px;
+        right: 20px;
+      }
+      @keyframes fadeInPopup {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .popup-content {
+          font-size: 1rem;
+        }
+        .diwali-btn {
+          padding: 10px 20px;
+          font-size: 1rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .popup-content {
+          width: 90%;
+          padding: 15px;
+        }
+        .diwali-btn {
+          font-size: 0.9rem;
+          padding: 8px 16px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header data-aos="fade-down">
       <!-- <h1>Dazzle Fest</h1>
       <h2>Light Up the Arena</h2> -->
+      <!-- Button for Popup -->
+      <button class="diwali-btn" onclick="showPopup()">Click to Know More</button>
+
+      <!-- Popup Modal -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <!-- Animated Typing Text -->
+          <div id="animatedText"></div>
+          <button class="diwali-btn" onclick="closePopup()">Close</button>
+        </div>
+      </div>
     </header>
 
     <section class="contest" data-aos="fade-up">
@@ -285,6 +397,39 @@
       AOS.init({
         duration: 1200,
       });
+    </script>
+    <script>
+      // Typing Animation Script
+      const contentText = `Hello Arenians,\n\nArena Animation Saket is excited to announce three special Diwali contests with amazing cash rewards for the winners in the following categories:\n\n1. Institute Decoration\n2. Instagram Posts\n3. Social Media Posts\n\nFrom each category, one winner will be chosen based on creativity, uniqueness, and impact. Submit your name and work to the academic head and get ready to showcase your skills!\n\nSubmission Deadlines:\n- Institute Decoration and Social Media Post: October 28, 2024 - 1 PM\n- Instagram Reel Contest: October 29, 2024 - 1 PM\n\nTo participate in the Diwali fest, each student must contribute ₹200. Best of luck!`;
+
+      let i = 0;
+      let typingInterval;
+
+      // Start Typing Animation
+      function startTypingAnimation() {
+        document.getElementById("animatedText").innerHTML = ""; // Clear content each time
+        i = 0; // Reset index
+        typingInterval = setInterval(() => {
+          if (i < contentText.length) {
+            document.getElementById("animatedText").innerHTML +=
+              contentText.charAt(i);
+            i++;
+          } else {
+            clearInterval(typingInterval); // Stop when done
+          }
+        }, 50); // Typing speed
+      }
+
+      // Popup Controls
+      function showPopup() {
+        document.getElementById("popup").style.display = "flex";
+        startTypingAnimation();
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        clearInterval(typingInterval); // Stop typing immediately
+      }
     </script>
   </body>
 </html>
